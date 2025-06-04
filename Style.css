@@ -1,3 +1,9 @@
+@font-face {
+    font-family: brand-name-font;
+    src: url(la-sonnambula.ffp.ttf);
+}
+
+
 * {
   margin: 0;
   padding: 0;
@@ -30,7 +36,7 @@ body {
 .search-container input {
   padding: 6px 12px;
   border: none;
-  border-radius: 20px;
+  border-radius: 10px;
   outline: none;
   background-color: #222;
   color: #fff;
@@ -40,7 +46,7 @@ body {
   padding: 6px 12px;
   background-color: #00ffcc;
   border: none;
-  border-radius: 20px;
+  border-radius: 10px;
   color: #000;
   font-weight: bold;
   cursor: pointer;
@@ -87,7 +93,7 @@ body {
 
 body{
     background-image: url(UsedImage/MainBG.jpg);
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-attachment: scroll;
     background-position: center;
     background-size: cover;
@@ -101,12 +107,12 @@ body{
     font-family: "consolas", sans-serif;
 }
 
-.intro-text {
+.main-page {
   color: #fff;
   text-align: center;
   max-width: 600px;
   margin: 80px auto; 
-  margin-top: 20px;
+  margin-top: 60px;
   padding: 20px;
   font-size: 1.2rem;
   line-height: 1.6;
@@ -132,6 +138,7 @@ body{
   width: 300px;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 25px;
 }
 
 .card img {
@@ -162,6 +169,42 @@ body{
 .brand-name
 {
     color: #3f4448;
-    font-family: "Style Script", cursive;
+    font-family: brand-name-font;
 }
 
+.brand-name-container
+{
+  margin-top: 60px;
+}
+
+.nav-links-footer a {
+  color: #00ffcc;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease, transform 0.2s ease;
+  opacity: 0.7;
+}
+
+.nav-links-footer a:hover {
+  color: #fff;
+  transform: scale(1.05);
+  text-shadow: rgb(255, 255, 255,0.7) 0px 0px 10px;
+}
+
+.nav-links-footer
+{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 60px;
+}
+
+.footer-brand-name
+{
+  font-family: brand-name-font;
+  font-size: x-large;
+}
+
+.footer-info
+{
+  margin-top: 40px;
+}
