@@ -186,7 +186,7 @@ body{
 }
 
 .nav-links-footer a:hover {
-  color: #fff;
+  color: #ffffff;
   transform: scale(1.05);
   text-shadow: rgb(255, 255, 255,0.7) 0px 0px 10px;
 }
@@ -207,4 +207,29 @@ body{
 .footer-info
 {
   margin-top: 40px;
+}
+
+.typing
+{
+   display: inline-block;
+   border-right: 1px solid white;
+   animation: 
+    blinking 1s steps(1,end) infinite;
+   animation: 
+    typing 3s steps(23,end) infinite;
+   overflow: hidden;
+   white-space: nowrap;
+   font-size: x-large;
+}
+
+@keyframes blinking 
+{
+  0% {border-color: hidden}
+  50% {border-color: white}
+  100% {border-color: transparent}
+}
+
+@keyframes typing {
+  0% {width: 0}
+  100% {width: 23ch}
 }
