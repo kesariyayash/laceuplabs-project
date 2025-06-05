@@ -35,7 +35,7 @@ body {
 .navbar-left img
 {
   height: 50px;
-    width:50px;
+  width:50px;
 }
 
 .search-container {
@@ -148,40 +148,6 @@ body {
 .menu:hover .menubtn {
   color: #00ffcc;
 }
-
-.nav-links {
-  display: flex;
-  gap: 24px;
-}
-
-.nav-links a {
-  color: #ccc;
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s ease, transform 0.2s ease;
-}
-
-.nav-links a:hover {
-  color: #00ffcc;
-  transform: scale(1.05);
-}
-
-/* @media (max-width: 600px) {
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .nav-links {
-    flex-direction: column;
-    gap: 12px;
-    margin-top: 10px;
-  }
-
-  .search-container {
-    margin-bottom: 10px;
-  }
-} */
 
 body{
     background-image: url(UsedImage/MainBG.jpg);
